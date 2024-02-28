@@ -58,6 +58,7 @@ onMounted(() => {
 							<div
 								class="h-full overflow-hidden"
 								:class="{
+                                    'h-[100%] w-[100%]': talk?.speakers.length === 1,
                                     'h-[50%] w-[50%]': talk?.speakers.length > 1 && talk?.speakers.length < 3,
 									'h-[49%] w-[50%]': talk?.speakers.length > 2 && talk?.speakers.length < 5,
 									'h-[33%] w-[50%]': talk?.speakers.length > 4
