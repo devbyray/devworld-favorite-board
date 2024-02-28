@@ -92,7 +92,7 @@ onMounted(() => {
 			</div>
 			<dialog
 				ref="dialog"
-				class="col-span-1 relative pt-8 max-w-[500px] p-4 bg-gray-700 rounded-lg text-white border-0"
+				class="col-span-1 relative pt-8 max-w-[500px] p-4 bg-gray-700 rounded-lg text-white border-0 m-4"
 			>
 				<div v-if="selectedTalk">
 					<div class="flex justify-between mb-4">
@@ -121,6 +121,12 @@ onMounted(() => {
 							</span>
 						</p>
 					</header>
+                    <div class="w-full px-2 py-1 mb-2 rounded-lg">
+						<strong
+							><time class="">{{ format(new Date(selectedTalk?.startDate), 'MM/dd/yyyy H:mm') }}</time> @
+							{{ selectedTalk?.roomName }}</strong
+						>
+					</div>
 					<section class="pl-2">
 						<p>{{ selectedTalk?.abstract }}</p>
 					</section>
