@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-base dark:bg-gray-800 dark:text-gray-300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold mt-8 mb-4;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-lg;
+}
+
+h6 {
+  @apply text-base;
+}
+
+ul,
+ol,
+p,
+dl {
+  @apply mb-4;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+
+a {
+  @apply text-blue-500 underline hover:no-underline hover:text-blue-700 dark:text-white dark:hover:text-gray-300;
+}
+
+pre {
+  @apply bg-gray-800 dark:bg-gray-950 text-white p-4 rounded overflow-auto;
+}
+
+label {
+  @apply font-bold cursor-pointer block h-[2rem] dark:text-gray-300;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="date"],
+select,
+textarea {
+  @apply w-full px-3 py-2 border border-black rounded-md focus:outline-none focus:ring-2 dark:bg-gray-500 dark:placeholder:text-gray-300;
+}
+
+button {
+  @apply text-black bg-green-500 dark:bg-green-900 px-4 py-2 rounded-lg hover:bg-green-600 dark:hover:bg-green-700 focus:outline-none focus:ring-2;
+}
